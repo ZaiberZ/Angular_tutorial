@@ -1,11 +1,15 @@
-<div>
-    <button [class.disabled]="btn_disabled" class="btn btn-success disabled"
-        (click)="text_color = 'text-success'">Green</button>
-    <button [class]="{'disabled': btn_disabled, 'btn': true, 'mx-2': true}" class="btn-danger"
-        (click)="text_color = 'text-danger'">Red</button>
-    <button [class]="{'disabled': btn_disabled}" class="btn btn-primary"
-        (click)="text_color = 'text-primary'">Blue</button>
+<!-- <div>
+    <button [disabled]="btn_disabled" class="btn btn-success" (click)="text_color = 'text-success'">Green</button>
+    <button [disabled]="btn_disabled" class="btn btn-danger mx-2" (click)="text_color = 'text-danger'">Red</button>
+    <button [disabled]="btn_disabled" class="btn btn-primary" (click)="text_color = 'text-primary'">Blue</button>
 </div>
 <p [class]="text_color">Nuevo color</p>
-<!-- <p>{{text_color}}</p> -->
-<button class="btn btn-secondary" (click)="btn_disabled = !btn_disabled">Active / Inactive</button>
+ <p>{{text_color}}</p> 
+<button class="btn btn-secondary" (click)="btn_disabled = !btn_disabled">Active / Inactive</button> -->
+<div>
+    <button class="btn btn-danger" (click)="src=pexels[0]">Img 1</button>
+    <button class="btn btn-primary mx-2" (click)="src=pexels[1]">Img 2</button>
+    <button class="btn btn-secondary" (click)="src=pexels[2]">Img 3</button>
+</div>
+<hr>
+<img [src]="src" alt="" />
