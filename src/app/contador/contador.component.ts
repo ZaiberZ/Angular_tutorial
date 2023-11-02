@@ -12,8 +12,19 @@ export class ContadorComponent implements OnInit {
 
   }
   //nombre: string = "Adrian";
-  persona: Persona = {
-    nombre: "Adrian",
-    edad: 30
+  // persona: Persona = {
+  //   nombre: "Adrian",
+  //   edad: 31
+  // }
+
+  numero: number = 1;
+
+  decrement() {
+    this.numero--;
+  }
+  increment() {
+    this.numero += 1;
   }
 }
+
+
