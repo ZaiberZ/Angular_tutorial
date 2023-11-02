@@ -1,0 +1,11 @@
+<div>
+    <button [class.disabled]="btn_disabled" class="btn btn-success disabled"
+        (click)="text_color = 'text-success'">Green</button>
+    <button [class]="{'disabled': btn_disabled, 'btn': true, 'mx-2': true}" class="btn-danger"
+        (click)="text_color = 'text-danger'">Red</button>
+    <button [class]="{'disabled': btn_disabled}" class="btn btn-primary"
+        (click)="text_color = 'text-primary'">Blue</button>
+</div>
+<p [class]="text_color">Nuevo color</p>
+<!-- <p>{{text_color}}</p> -->
+<button class="btn btn-secondary" (click)="btn_disabled = !btn_disabled">Active / Inactive</button>
