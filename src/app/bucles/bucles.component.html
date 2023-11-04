@@ -1,0 +1,7 @@
+<p>bucles works!</p>
+<!-- {{personas}} -->
+<ul>
+    <li *ngFor="let p of personas; let i = index">
+        {{i + 1}} - Nombre: {{p.nombre}} <br>Edad: {{p.edad}}
+    </li>
+</ul>
