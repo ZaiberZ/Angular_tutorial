@@ -2,3 +2,12 @@
 <button class="btn btn-primary mt-w" (click)="showConsole(name.value)">
     Monstrar en consola
 </button>
+<div class="alert alert-primary mt-4" *ngIf="openAlert; else mensaje">
+    <p>Mensaje:{{name.value}}</p>
+    <button class="btn btn-danger" (click)="openAlert=false">X</button>
+</div>
+<ng-template #mensaje>
+    <div class="alert alert-danger">
+        Preba
+    </div>
+</ng-template>
