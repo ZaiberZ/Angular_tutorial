@@ -6,9 +6,10 @@ import { ContadorComponent } from './contador/contador.component';
 import { BotonesComponent } from './botones/botones.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { BuclesComponent } from './bucles/bucles.component';
+import { SwitchComponent } from './switch/switch.component';
 
 @NgModule({
-  declarations: [AppComponent, ContadorComponent, BotonesComponent, FormularioComponent, BuclesComponent],
+  declarations: [AppComponent, ContadorComponent, BotonesComponent, FormularioComponent, BuclesComponent, SwitchComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent]

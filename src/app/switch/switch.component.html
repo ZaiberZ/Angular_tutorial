@@ -1,0 +1,26 @@
+<input class="form-control" #newDay>
+<button class="btn btn-primary" (click)="nval=newDay.value">
+    Mostrar</button>
+
+<!-- <div [ngSwitch]="dia">
+    <span *ngSwitchCase="1">Lun</span>
+    <span *ngSwitchCase="2">Mar</span>
+    <span *ngSwitchCase="3">Mir</span>
+    <span *ngSwitchCase="4">Jue</span>
+    <span *ngSwitchCase="5">Vie</span>
+    <span *ngSwitchCase="6">Sab</span>
+    <span *ngSwitchCase="7">Dom</span>
+    <span *ngSwitchDefault>Otro</span>
+</div> -->
+
+<div [ngSwitch]="nval" *ngIf="nval">
+    <span *ngSwitchCase="'Ab'">0</span>
+    <span *ngSwitchCase="'1'">Lun</span>
+    <span *ngSwitchCase="'2'">Mar</span>
+    <span *ngSwitchCase="'3'">Mir</span>
+    <span *ngSwitchCase="'4'">Jue</span>
+    <span *ngSwitchCase="'5'">Vie</span>
+    <span *ngSwitchCase="'6'">Sab</span>
+    <span *ngSwitchCase="'7'">Dom</span>
+    <span *ngSwitchDefault>Otro</span>
+</div>
