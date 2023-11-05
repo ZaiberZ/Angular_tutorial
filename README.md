@@ -2,7 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 ## AngularTutorial
-[Curso Angular desde cero](https://youtube.com/playlist?list=PLZ2ovOgdI-kWDh3jDh-GvgToRlVfwIUFw&si=W22PEwvI9-4TqlqQ)
+ <!-- [Curso Angular desde cero](https://youtube.com/playlist?list=PLZ2ovOgdI-kWDh3jDh-GvgToRlVfwIUFw&si=W22PEwvI9-4TqlqQ) -->
+<a href="https://youtube.com/playlist?list=PLZ2ovOgdI-kWDh3jDh-GvgToRlVfwIUFw&si=W22PEwvI9-4TqlqQ" target="_blank">Curso Angular desde cero</a>
 
 ### Development server
 

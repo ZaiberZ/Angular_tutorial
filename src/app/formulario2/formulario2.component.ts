@@ -11,7 +11,7 @@ export class Formulario2Component {
     console.log(this.persona);
   }
   persona = {
-    nombre: "Yo",
-    edad: "55"
+    nombre: "",
+    edad: ""
   };
 }

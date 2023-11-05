@@ -3,15 +3,25 @@
         <form (ngSubmit)="procesar()">
             <div>
                 <label class="form-label">Nombre:</label>
-                <input class="form-control" name="nombre" placeholder="Ingresa un nombre" [(ngModel)]="persona.nombre">
+                <input class="form-control" name="nombre" placeholder="Ingresa un nombre" [(ngModel)]="persona.nombre"
+                    required #name="ngModel">
+                <div class="alert alert-danger mt-2" [hidden]="name.valid || name.pristine">
+                    Obligatorio
+                </div>
             </div>
             <div>
                 <label class="form-label">Edad:</label>
                 <input class="form-control" name="edad" placeholder="Ingresa una edad" type="number"
-                    [(ngModel)]="persona.edad">
+                    [(ngModel)]="persona.edad" required="" #edad="ngModel">
+                <div class="alert alert-danger mt-2" [hidden]="edad.valid || edad.pristine">
+                    Edad obligatoria 
+                </div>
             </div>
             <button class="btn btn-primary">Enviar</button>
         </form>
     </div>
 </div>
-{{persona | json}}
+<!-- {{persona | json}} -->
+<!-- {{ name.errors | json}}
+<hr>
+{{ name.valid | json}} -->
